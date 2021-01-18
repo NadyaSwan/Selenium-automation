@@ -3,33 +3,38 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.IO;
 using System.Reflection;
+using System.Threading;
 
-namespace Web_browser_automation
+namespace Selenium_automation
 {
     class Initializer
     {
-        IWebDriver driver;
+        public static IWebDriver driver;
+        public Actions I;
 
         [SetUp]
         public void Init()
         {
-            var outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            var relativePath = @"..\Drivers";
-            var driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
-            driver = new ChromeDriver(driverPath);
-        }
+            string outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string relativePath = @"..\Drivers";
+            string driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
+            driver = new ChromeDriver(driverPath)
+            {
+                Url = "https://demoqa.com/",
+              
+            };
+            I = new Actions(driver);
+            Base.driver = driver;
 
-        [Test]
-        public void test()
-        {
-            driver.Url = "https://demoqa.com/";
+            driver.Manage().Window.Maximize();
+            Thread.Sleep(2000);
         }
 
         [TearDown]
         public void Close()
         {
             driver.Close();
-            driver.Dispose();
+            driver.Quit();
         }
     }
 }
