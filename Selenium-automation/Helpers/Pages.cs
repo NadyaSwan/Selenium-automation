@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Support.PageObjects;
 using Selenium_automation.PageObjects;
 
-namespace Selenium_automation
+namespace Selenium_automation.Helpers
 {
     public static class Pages
     {
@@ -21,6 +21,5 @@ namespace Selenium_automation
         {
             get { return GetPages<ElementsPage>(); }
         }
-
     }
 }
