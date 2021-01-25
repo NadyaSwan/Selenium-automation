@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using Selenium_automation.Helpers;
+using System;
 using System.Collections.Generic;
 
 namespace Selenium_automation
@@ -45,6 +46,7 @@ namespace Selenium_automation
 
         public void Click(IWebElement element)
         {
+            ScrollIntoView(element);
             element.Click();
         }
 
@@ -56,6 +58,22 @@ namespace Selenium_automation
         public void Fill(IWebElement element, string text)
         {
             element.SendKeys(text);
+        }
+
+        public void ScrollIntoView(IWebElement element)
+        {
+            var js = (IJavaScriptExecutor)driver;
+            try
+            {
+                if (element.Location.Y > 200)
+                {
+                    js.ExecuteScript($"window.scrollTo({0}, {element.Location.Y - 200 })");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
     }
 }

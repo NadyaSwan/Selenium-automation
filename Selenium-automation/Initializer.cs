@@ -13,12 +13,20 @@ namespace Selenium_automation
         public static IWebDriver driver;
         public Actions I;
 
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
+        {
+            Logger.InitLogger();
+        }
+
         [SetUp]
         public void Init()
         {
             string outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string relativePath = @"..\Drivers";
             string driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
+            //var options = new ChromeOptions();
+            //options.AddArguments("--headless");
             driver = new ChromeDriver(driverPath)
             {
                 Url = "https://demoqa.com/",
@@ -34,7 +42,6 @@ namespace Selenium_automation
         [TearDown]
         public void Close()
         {
-            driver.Close();
             driver.Quit();
         }
     }

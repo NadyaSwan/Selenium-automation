@@ -5,12 +5,15 @@ using System.Collections.Generic;
 
 namespace Selenium_automation.PageObjects
 {
-    public partial class ElementsPage
+    public class ElementsPage
     {
         [FindsBy(How = How.ClassName, Using = "element-group")]
         public IList<IWebElement> ElementGroups { get; set; }
 
         [FindsBy(How = How.Id, Using = "item-0")]
         public IWebElement TextBoxElement { get; set; }
+
+        [FindsBy(How = How.Id, Using = "item-1")]
+        public IWebElement CheckboxElement { get; set; }
     }
 }
