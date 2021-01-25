@@ -17,6 +17,11 @@ namespace Selenium_automation.Helpers
             get { return GetComponents<TextBox>(); }
         }
 
+        public static Checkbox Checkbox
+        {
+            get { return GetComponents<Checkbox>(); }
+        }
+
         public static UserForm UserForm
         {
             get { return GetComponents<UserForm>(); }

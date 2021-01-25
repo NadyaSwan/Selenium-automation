@@ -6,6 +6,7 @@ namespace Selenium_automation.Tests
     class HomePageTests: Initializer
     {
         [Test]
+        [Category("HomePage")]
         public void MainElementsPresent()
         {
             I.See(Pages.HomePage.Logo);

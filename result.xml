@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="5" result="Passed" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="38" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-01-25 17:31:17Z" end-time="2021-01-25 17:32:19Z" duration="61.743864">
+  <command-line><![CDATA[nunit3-console.exe  "../../../Selenium-automation/bin/Debug/Selenium-automation.dll" --result="../../../result.xml"]]></command-line>
+  <test-suite type="Assembly" id="1-1007" name="Selenium-automation.dll" fullname="C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\bin\Debug\Selenium-automation.dll" runstate="Runnable" testcasecount="5" result="Passed" start-time="2021-01-25 17:31:18Z" end-time="2021-01-25 17:32:19Z" duration="60.840368" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="38">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.18363.0" platform="Win32NT" cwd="C:\Users\Acer\source\repos\Selenium-automation\packages\bin\net20" machine-name="DESKTOP-RT134FN" user="Acer" user-domain="DESKTOP-RT134FN" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Acer\source\repos\Selenium-automation\packages\bin\net20" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="14592" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="1-1008" name="Selenium_automation" fullname="Selenium_automation" runstate="Runnable" testcasecount="5" result="Passed" start-time="2021-01-25 17:31:18Z" end-time="2021-01-25 17:32:19Z" duration="60.778716" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="38">
+      <test-suite type="TestSuite" id="1-1009" name="Tests" fullname="Selenium_automation.Tests" runstate="Runnable" testcasecount="5" result="Passed" start-time="2021-01-25 17:31:18Z" end-time="2021-01-25 17:32:19Z" duration="60.777579" total="5" passed="5" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="38">
+        <test-suite type="TestFixture" id="1-1000" name="ElementsTests" fullname="Selenium_automation.Tests.ElementsTests" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2021-01-25 17:31:18Z" end-time="2021-01-25 17:32:07Z" duration="49.076998" total="4" passed="4" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="27">
+          <test-case id="1-1003" name="CheckboxRootFolder" fullname="Selenium_automation.Tests.ElementsTests.CheckboxRootFolder" methodname="CheckboxRootFolder" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="579530315" result="Passed" start-time="2021-01-25 17:31:18Z" end-time="2021-01-25 17:31:31Z" duration="12.212136" asserts="9">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="All checkboxes are checked when root folder is clicked" />
+            </properties>
+          </test-case>
+          <test-case id="1-1004" name="CheckboxSubFolders" fullname="Selenium_automation.Tests.ElementsTests.CheckboxSubFolders" methodname="CheckboxSubFolders" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="977304601" result="Passed" start-time="2021-01-25 17:31:31Z" end-time="2021-01-25 17:31:43Z" duration="12.844893" asserts="9">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="All checkboxes are checked when sub folders are clicked" />
+            </properties>
+          </test-case>
+          <test-case id="1-1001" name="TextBoxElement" fullname="Selenium_automation.Tests.ElementsTests.TextBoxElement" methodname="TextBoxElement" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="764016831" result="Passed" start-time="2021-01-25 17:31:43Z" end-time="2021-01-25 17:31:54Z" duration="10.645107" asserts="3">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="Test to check TextBox element form present" />
+            </properties>
+          </test-case>
+          <test-case id="1-1002" name="TextBoxElementEmailValidation" fullname="Selenium_automation.Tests.ElementsTests.TextBoxElementEmailValidation" methodname="TextBoxElementEmailValidation" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="1385088796" result="Passed" start-time="2021-01-25 17:31:54Z" end-time="2021-01-25 17:32:07Z" duration="13.344627" asserts="6">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="Test to check TextBox element email validation" />
+            </properties>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1-1005" name="HomePageTests" fullname="Selenium_automation.Tests.HomePageTests" classname="Selenium_automation.Tests.HomePageTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2021-01-25 17:32:07Z" end-time="2021-01-25 17:32:19Z" duration="11.684900" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="11">
+          <test-case id="1-1006" name="MainElementsPresent" fullname="Selenium_automation.Tests.HomePageTests.MainElementsPresent" methodname="MainElementsPresent" classname="Selenium_automation.Tests.HomePageTests" runstate="Runnable" seed="2142365305" result="Passed" start-time="2021-01-25 17:32:07Z" end-time="2021-01-25 17:32:19Z" duration="11.684310" asserts="11">
+            <properties>
+              <property name="Category" value="HomePage" />
+            </properties>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
