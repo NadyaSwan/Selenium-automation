@@ -72,16 +72,21 @@
     <Compile Include="Initializer.cs" />
     <Compile Include="Helpers\Base.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="PageObjects\Dialogs\ModalDialog.cs" />
+    <Compile Include="PageObjects\Dialogs\RegistrationContent.cs" />
     <Compile Include="PageObjects\ElementsPage.cs" />
     <Compile Include="PageObjects\Elements\Checkbox.cs" />
+    <Compile Include="PageObjects\Elements\RegistrationForm.cs" />
     <Compile Include="PageObjects\Elements\UserForm.cs" />
     <Compile Include="PageObjects\HomePage.cs" />
     <Compile Include="PageObjects\Elements\TextBox.cs" />
     <Compile Include="Helpers\Pages.cs" />
+    <Compile Include="PageObjects\RegistrationPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\ElementsTests.cs" />
     <Compile Include="Tests\HomePageTests.cs" />
+    <Compile Include="Tests\RegistrationTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -89,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Drivers\chromedriver.exe" />
+    <Content Include="TestData\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

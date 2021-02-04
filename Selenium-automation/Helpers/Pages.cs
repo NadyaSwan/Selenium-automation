@@ -21,5 +21,10 @@ namespace Selenium_automation.Helpers
         {
             get { return GetPages<ElementsPage>(); }
         }
+
+        public static RegistrationPage RegistrationPage
+        {
+            get { return GetPages<RegistrationPage>(); }
+        }
     }
 }
