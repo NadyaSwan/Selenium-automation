@@ -25,8 +25,8 @@ namespace Selenium_automation
             string outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string relativePath = @"..\Drivers";
             string driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
-            //var options = new ChromeOptions();
-            //options.AddArguments("--headless");
+            var options = new ChromeOptions();
+            options.AddArguments("--headless");
             driver = new ChromeDriver(driverPath)
             {
                 Url = "https://demoqa.com/",
