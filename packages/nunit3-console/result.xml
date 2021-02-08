@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="5" result="Failed" total="5" passed="0" failed="5" inconclusive="0" skipped="0" asserts="34" engine-version="3.12.0.0" clr-version="4.0.30319.42000" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:25:23Z" duration="113.001397">
+  <command-line><![CDATA[nunit3-console.exe  "../../../Selenium-automation/bin/Debug/Selenium-automation.dll" --result="result.xml"]]></command-line>
+  <test-suite type="Assembly" id="1-1007" name="Selenium-automation.dll" fullname="C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\bin\Debug\Selenium-automation.dll" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:25:22Z" duration="112.169732" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="34">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.18363.0" platform="Win32NT" cwd="C:\Users\Acer\source\repos\Selenium-automation\packages\bin\net20" machine-name="DESKTOP-RT134FN" user="Acer" user-domain="DESKTOP-RT134FN" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\Acer\source\repos\Selenium-automation\packages\bin\net20" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.7.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="net-4.0" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="19204" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1008" name="Selenium_automation" fullname="Selenium_automation" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:25:22Z" duration="112.139181" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="34">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1-1009" name="Tests" fullname="Selenium_automation.Tests" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:25:22Z" duration="112.138397" total="5" passed="0" failed="5" warnings="0" inconclusive="0" skipped="0" asserts="34">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1-1000" name="ElementsTests" fullname="Selenium_automation.Tests.ElementsTests" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:25:03Z" duration="92.550245" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="23">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1-1003" name="CheckboxRootFolder" fullname="Selenium_automation.Tests.ElementsTests.CheckboxRootFolder" methodname="CheckboxRootFolder" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="1587611060" result="Failed" label="Error" start-time="2021-01-22 19:23:30Z" end-time="2021-01-22 19:23:55Z" duration="25.087047" asserts="9">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="All checkboxes are checked when root folder is clicked" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:63103/session//window. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:63103]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at Selenium_automation.Initializer.Close() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Initializer.cs:line 40
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+--SocketException
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1-1004" name="CheckboxSubFolders" fullname="Selenium_automation.Tests.ElementsTests.CheckboxSubFolders" methodname="CheckboxSubFolders" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="676239129" result="Failed" label="Error" start-time="2021-01-22 19:23:55Z" end-time="2021-01-22 19:24:16Z" duration="20.170721" asserts="9">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="All checkboxes are checked when sub folders are clicked" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:63147/session//window. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:63147]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at Selenium_automation.Initializer.Close() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Initializer.cs:line 40
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+--SocketException
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1-1001" name="TextBoxElement" fullname="Selenium_automation.Tests.ElementsTests.TextBoxElement" methodname="TextBoxElement" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="1782370993" result="Failed" label="Error" start-time="2021-01-22 19:24:16Z" end-time="2021-01-22 19:24:40Z" duration="24.036649" asserts="3">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="Test to check TextBox element form present" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:63182/session//window. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:63182]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at Selenium_automation.Initializer.Close() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Initializer.cs:line 40
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+--SocketException
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1-1002" name="TextBoxElementEmailValidation" fullname="Selenium_automation.Tests.ElementsTests.TextBoxElementEmailValidation" methodname="TextBoxElementEmailValidation" classname="Selenium_automation.Tests.ElementsTests" runstate="Runnable" seed="1450573963" result="Failed" label="Error" start-time="2021-01-22 19:24:40Z" end-time="2021-01-22 19:25:03Z" duration="23.221774" asserts="2">
+            <properties>
+              <property name="Category" value="Elements" />
+              <property name="Description" value="Test to check TextBox element email validation" />
+            </properties>
+            <failure>
+              <message><![CDATA[System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.
+  ----> OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <button id="submit" type="button" class="btn btn-primary">...</button> is not clickable at point (569, 581). Other element would receive the click: <footer>...</footer>
+  (Session info: headless chrome=87.0.4280.141)
+TearDown : OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:63221/session//window. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:63221]]></message>
+              <stack-trace><![CDATA[   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at OpenQA.Selenium.Support.PageObjects.WebDriverObjectProxy.InvokeMethod(IMethodCallMessage msg, Object representedValue)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at OpenQA.Selenium.IWebElement.Click()
+   at Selenium_automation.Actions.Click(IWebElement element) in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Actions.cs:line 48
+   at Selenium_automation.Tests.ElementsTests.TextBoxElementEmailValidation() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Tests\ElementsTests.cs:line 37
+--ElementClickInterceptedException
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebElement.Execute(String commandToExecute, Dictionary`2 parameters)
+--TearDown
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at Selenium_automation.Initializer.Close() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Initializer.cs:line 40
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+--SocketException
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1-1005" name="HomePageTests" fullname="Selenium_automation.Tests.HomePageTests" classname="Selenium_automation.Tests.HomePageTests" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2021-01-22 19:25:03Z" end-time="2021-01-22 19:25:22Z" duration="19.565063" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="11">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1-1006" name="MainElementsPresent" fullname="Selenium_automation.Tests.HomePageTests.MainElementsPresent" methodname="MainElementsPresent" classname="Selenium_automation.Tests.HomePageTests" runstate="Runnable" seed="203853005" result="Failed" label="Error" start-time="2021-01-22 19:25:03Z" end-time="2021-01-22 19:25:22Z" duration="19.564034" asserts="11">
+            <properties>
+              <property name="Category" value="HomePage" />
+            </properties>
+            <failure>
+              <message><![CDATA[TearDown : OpenQA.Selenium.WebDriverException : A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:63258/session//window. The status of the exception was ConnectFailure, and the message was: Unable to connect to the remote server
+  ----> System.Net.WebException : Unable to connect to the remote server
+  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it 127.0.0.1:63258]]></message>
+              <stack-trace><![CDATA[--TearDown
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.DriverServiceCommandExecutor.Execute(Command commandToExecute)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at Selenium_automation.Initializer.Close() in C:\Users\Acer\source\repos\Selenium-automation\Selenium-automation\Initializer.cs:line 40
+--WebException
+   at System.Net.HttpWebRequest.GetResponse()
+   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)
+--SocketException
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
