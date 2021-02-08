@@ -1,4 +1,6 @@
-﻿def releasePath = "%WORKSPACE%\Release job";
+﻿#!/usr/bin/env groovy
+
+def releasePath = "%WORKSPACE%\Release job";
 
 pipeline {
     agent any 
