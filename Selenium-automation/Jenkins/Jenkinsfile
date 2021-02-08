@@ -1,8 +1,6 @@
-﻿package file-operations-plugin
+﻿def releasePath = "%WORKSPACE%\Release job";
 
-def releasePath = "%WORKSPACE%\Release job";
-
-node {
+pipeline {
     agent any
     stages {
         stage('Copy from release job') {
