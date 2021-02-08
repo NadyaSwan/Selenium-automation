@@ -4,13 +4,19 @@ pipeline {
     agent any
     stages {
         stage('Copy from release job') {
-            fileOperations([folderCopyOperation(destinationFolderPath: '', sourceFolderPath: '"%WORKSPACE%\\Release job"')])
+            steps {
+                fileOperations([folderCopyOperation(destinationFolderPath: '', sourceFolderPath: '"%WORKSPACE%\\Release job"')])
+            }
         }
         stage('Run tests') {
-            cd packages/bin/net20 && nunit3-console.exe "../../../Selenium-automation/bin/Debug/Selenium-automation.dll" --result="../../../TestResult.xml"
+            steps {
+                cd packages/bin/net20 && nunit3-console.exe "../../../Selenium-automation/bin/Debug/Selenium-automation.dll" --result="../../../TestResult.xml"
+            }
         }
         stage('Get test report') {
-            nunit "TestResult.xml"
+            steps {
+                nunit testResultsPattern: 'TestResults.xml'
+            }
         }
     }
 }
