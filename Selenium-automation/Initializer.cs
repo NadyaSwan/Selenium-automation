@@ -22,9 +22,7 @@ namespace Selenium_automation
         [SetUp]
         public void Init()
         {
-            string outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string relativePath = @"..\Drivers";
-            string driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
+            string driverPath = "Drivers";
             var options = new ChromeOptions();
             options.AddArguments("--headless");
             driver = new ChromeDriver(driverPath)
