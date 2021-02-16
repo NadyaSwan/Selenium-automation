@@ -24,7 +24,7 @@ namespace Selenium_automation
         {
             string driverDirectory = Utils.AppRelativeToFullPath("Drivers");
             var options = new ChromeOptions();
-            options.AddArguments("--headless");
+            options.AddArguments("--headless", "--no-sandbox");
             driver = new ChromeDriver(driverDirectory)
             {
                 Url = "https://demoqa.com/",
