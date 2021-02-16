@@ -1,0 +1,24 @@
+﻿#!/usr/bin/env groovy
+
+def workspace = "%WORKSPACE%".replace("\\", "/")
+
+pipeline {
+    agent any 
+    stages {
+        stage('Get latest version of tests') { 
+            steps {
+                fileOperations([folderCopyOperation(destinationFolderPath: '', sourceFolderPath: "C:/Program Files/Jenkins/workspace/Release job")]) 
+            }
+        }
+        stage('Run tests') {
+            steps {
+                bat """cd ${workspace}\\packages\\nunit3-console\\net20 && nunit3-console.exe "..\\..\\..\\Selenium-automation\\bin\\Debug\\Selenium-automation.dll" --result="..\\..\\..\\TestResults.xml"""
+            }
+        }
+    }
+    post { 
+        always { 
+            nunit testResultsPattern: 'TestResults.xml'
+        }
+    }
+}

@@ -69,6 +69,7 @@
     <Compile Include="Helpers\Assertions.cs" />
     <Compile Include="Helpers\Components.cs" />
     <Compile Include="Helpers\Constants.cs" />
+    <Compile Include="Helpers\Utils.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Helpers\Base.cs" />
     <Compile Include="Logger.cs" />
@@ -90,12 +91,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Jenkins\Pipeline" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Drivers\chromedriver.exe" />
     <Content Include="TestData\images.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

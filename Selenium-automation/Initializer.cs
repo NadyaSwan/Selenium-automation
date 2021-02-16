@@ -22,15 +22,13 @@ namespace Selenium_automation
         [SetUp]
         public void Init()
         {
-            string outPutDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string relativePath = @"..\Drivers";
-            string driverPath = Path.GetFullPath(Path.Combine(outPutDirectory, relativePath));
-            //var options = new ChromeOptions();
-            //options.AddArguments("--headless");
-            driver = new ChromeDriver(driverPath)
+            string driverDirectory = Utils.AppRelativeToFullPath("Drivers");
+            var options = new ChromeOptions();
+            options.AddArguments("--headless", "--no-sandbox");
+            driver = new ChromeDriver(driverDirectory, options)
             {
                 Url = "https://demoqa.com/",
-              
+
             };
             I = new Actions(driver);
             Base.driver = driver;
