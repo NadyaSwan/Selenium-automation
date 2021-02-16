@@ -92,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Jenkins\Jenkinsfile" />
+    <None Include="Jenkins\Pipeline" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

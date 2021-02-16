@@ -1,1 +1,1 @@
-cd packages/nunit3-console && nunit3-console.exe "../../Selenium-automation/bin/Debug/Selenium-automation.dll" --work="../../../TestResult.xml"
+cd packages/nunit3-console/net20 && nunit3-console.exe "../../../Selenium-automation/bin/Debug/Selenium-automation.dll" --work="../../../TestResults.xml"
