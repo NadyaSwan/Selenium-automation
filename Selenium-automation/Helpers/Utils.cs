@@ -15,7 +15,7 @@ namespace Selenium_automation.Helpers
             if (string.IsNullOrEmpty(relativePath) || Path.IsPathRooted(relativePath))
                 return relativePath;
 
-            var path = Path.Combine(TestContext.CurrentContext.TestDirectory, relativePath);
+            var path = Path.Combine(TestContext.CurrentContext.TestDirectory, "../../", relativePath);
             return Path.GetFullPath(path);
         }
     }
